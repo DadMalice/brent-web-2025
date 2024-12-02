@@ -1,0 +1,136 @@
+/* Reset and Base Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #0078d4, #001f3f);
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
+}
+
+/* Taskbar */
+.taskbar {
+    display: flex;
+    justify-content: space-between; /* Pushes the content to both ends */
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0 20px; /* Optional: Adds space around the content */
+}
+
+/* Taskbar Middle Icons */
+.taskbar-middle-icons {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center; /* Centers the icons in the middle */
+    flex-grow: 1; /* Makes the middle section take available space */
+}
+
+/* Taskbar Right Icons */
+.taskbar-right-icons {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-right: 25px;
+    flex-grow: 0;
+}
+
+.taskbar-left-ghost {
+    height: auto;
+}
+
+/* Task Icon */
+.taskicon {
+    width: auto;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 3px; /* Smooth corners */
+    padding: 3x;
+    transition: all 0.2s ease;
+}
+
+/* Icon Image */
+.taskicon img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* Div Title */
+.taskicon .title {
+    font-size: 11px;
+    text-align: end;
+    line-height: 0.6;
+}
+
+/* Div Language */
+.taskicon .language {
+    font-size: 11px;
+    text-align: center;
+    line-height: 0.6;
+}
+
+
+/* Individual Icons */
+.taskicon {
+    width: auto; 
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 3px; /* Smooth corners */
+    padding: 7px; 
+    transition: all 0.2s ease;
+}
+
+/* Icon Image */
+.taskicon img {
+    width: 100%; 
+    height: 100%;
+    object-fit: fill; 
+}
+
+
+/* Desktop Icons */
+.desktop-icons {
+    justify-items: left;
+    align-items: center;
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.deskicon {
+    width: 75px;
+    height: auto;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 3px; /* Smooth corners */
+    padding: 5px; 
+    margin: 5px;
+    transition: all 0.2s ease;
+}
+
+.deskicon img {
+    width: 65%;
+    height: auto;
+}
+
+.deskicon .title {
+    margin-top: 2px; /* Add space between the icon and the title */
+    margin-bottom: 1px;
+    font-size: 14px; /* Adjust the title font size if necessary */
+}
